@@ -299,5 +299,65 @@ namespace CryptoMonitoring.Properties {
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Знімок_екрана_2025_09_24_181114 {
+            get {
+                object obj = ResourceManager.GetObject("Знімок екрана 2025-09-24 181114", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Знімок_екрана_2025_09_24_181144 {
+            get {
+                object obj = ResourceManager.GetObject("Знімок екрана 2025-09-24 181144", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Знімок_екрана_2025_09_24_181250 {
+            get {
+                object obj = ResourceManager.GetObject("Знімок екрана 2025-09-24 181250", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Знімок_екрана_2025_09_24_181317 {
+            get {
+                object obj = ResourceManager.GetObject("Знімок екрана 2025-09-24 181317", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Знімок_екрана_2025_09_24_181341 {
+            get {
+                object obj = ResourceManager.GetObject("Знімок екрана 2025-09-24 181341", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Знімок_екрана_2025_09_24_181413 {
+            get {
+                object obj = ResourceManager.GetObject("Знімок екрана 2025-09-24 181413", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
     }
 }

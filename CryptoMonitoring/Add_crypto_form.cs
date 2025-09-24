@@ -39,6 +39,7 @@ namespace CryptoMonitoring
                 Program.users[Program.currentUserIndex].cryptos.Add(crypto);
                 Program.SerialazeUsers();
                 СryptoUC.AddCryptoButton(cryptoName);
+                Program.AchivesOfUsers();
                 this.Close();
             }
             else

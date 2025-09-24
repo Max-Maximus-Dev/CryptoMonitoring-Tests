@@ -5,10 +5,6 @@ namespace CryptoMonitoring
 {
     internal static class Program
     {
-        static public bool achive1 = false;
-        static public bool achive2 = false;
-        static public bool achive3 = false;
-        static public bool achive4 = false;
         public static List<User> users;
         public static int currentUserIndex;
         [STAThread]
@@ -26,21 +22,66 @@ namespace CryptoMonitoring
 
         public static void AchivesOfUsers()
         {
-            User currentUser = users[currentUserIndex];
-            if (currentUser.balance >= 50000)
+            User user = users[currentUserIndex];
+            // achive 1 - earn 50.000$
+            // achive 2 - first cripto buy
+            // achive 3 - but bitcoin
+            // achive 4 - buy eth
+            // achive 5 - have 5 different cryptos
+            // achive 6 - earn 200% of sell cripto
+            // achive 7 - earn 1.000.000$
+            // achive 8 - all achives
+            if (user.balance >= 50000 && !user.achievements[0])
             {
-                achive1 = true;
+                user.achievements[0] = true;
+                MessageBox.Show("Хороший капітал!", "Ви отримали досягнення 'Хороший капітал'!", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
-            if (currentUser.cryptos.Count >= 1)
+            if (user.cryptos.Count >= 1 && !user.achievements[1])
             {
-                achive2 = true;
-                foreach (Crypto crypto in currentUser.cryptos)
+                user.achievements[1] = true;
+                MessageBox.Show("Перша крипта!", "Ви отримали досягнення 'Перша крипта'!", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            if (user.cryptos.Exists(c => c.name == "Bitcoin") && !user.achievements[2])
+            {
+                user.achievements[2] = true;
+                MessageBox.Show("Мрія зробити це в 2012 році", "Ви отримали досягнення 'Мрія зробити це в 2012 році'!", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            if (user.cryptos.Exists(c => c.name == "Ethereum") && !user.achievements[3])
+            {
+                user.achievements[3] = true;
+                MessageBox.Show("Мрія здійснилась", "Ви отримали досягнення 'Мрія здійснилась'!", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            if (user.cryptos.Count >= 5 && !user.achievements[4])
+            {
+                user.achievements[4] = true;
+                MessageBox.Show("Криптоколекціонер", "Ви отримали досягнення 'Криптоколекціонер'!", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            if (!user.achievements[5])
+            {
+                foreach (var crypto in user.cryptos)
                 {
-                    if (crypto.name == "Bitcoin")
-                        achive3 = true;
-                    if (crypto.name == "Ethereum")
-                        achive4 = true;
+                    //if (crypto.sellPrice >= crypto.buyPrice * 3)
+                    //{
+                    //    user.achievements[5] = true;
+                    //    MessageBox.Show("Вдалий трейдер", "Ви отримали досягнення 'Вдалий трейдер'!", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    //    break;
+                    //}
                 }
+            }
+            if (user.balance >= 1000000 && !user.achievements[6])
+            {
+                user.achievements[6] = true;
+                MessageBox.Show("Багатій майбутнього", "Ви отримали досягнення 'Багатій майбутнього'!", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            if (!user.achievements[7])
+            {
+                for (int i = 0; i < 7; i++)
+                {
+                    if (!user.achievements[i])
+                        return;
+                }
+                user.achievements[7] = true;
+                MessageBox.Show("Криптогуру", "Ви отримали досягнення 'Криптогуру'!", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
         }
 

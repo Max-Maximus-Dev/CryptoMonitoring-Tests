@@ -26,26 +26,52 @@ namespace CryptoMonitoring
             // Мрія зробити це в 2012 році - купити Bitcoin
             // Мрія здійснилась - купити Ethereum
             // Майнер - купити перший майнер
-            if (Program.achive1)
+            User user = Program.users[Program.currentUserIndex];
+            if (user.achievements[0])
             {
-                pictureBox5.Image = Properties.Resources.approved;
-                pictureBox5.SizeMode = PictureBoxSizeMode.Zoom;
+                isaprove1.BackgroundImage = Properties.Resources.approved;
+                isaprove1.BackgroundImageLayout = ImageLayout.Zoom;
             }
-            if (Program.achive2)
+            if (user.achievements[1])
             {
-                pictureBox6.Image = Properties.Resources.approved;
-                pictureBox6.SizeMode = PictureBoxSizeMode.Zoom;
+                isaprove2.BackgroundImage = Properties.Resources.approved;
+                isaprove2.BackgroundImageLayout = ImageLayout.Zoom;
             }
-            if (Program.achive3)
+            if (user.achievements[2])
             {
-                pictureBox7.Image = Properties.Resources.approved;
-                pictureBox7.SizeMode = PictureBoxSizeMode.Zoom;
+                isaprove3.BackgroundImage = Properties.Resources.approved;
+                isaprove3.BackgroundImageLayout = ImageLayout.Zoom;
             }
-            if (Program.achive4)
+            if (user.achievements[3])
             {
-                pictureBox8.Image = Properties.Resources.approved;
-                pictureBox8.SizeMode = PictureBoxSizeMode.Zoom;
+                isaprove4.BackgroundImage = Properties.Resources.approved;
+                isaprove4.BackgroundImageLayout = ImageLayout.Zoom;
             }
+            if (user.achievements[4])
+            {
+                isaprove5.BackgroundImage = Properties.Resources.approved;
+                isaprove5.BackgroundImageLayout = ImageLayout.Zoom;
+            }
+            if (user.achievements[5])
+            {
+                isaprove6.BackgroundImage = Properties.Resources.approved;
+                isaprove6.BackgroundImageLayout = ImageLayout.Zoom;
+            }
+            if (user.achievements[6])
+            {
+                isaprove7.BackgroundImage = Properties.Resources.approved;
+                isaprove7.BackgroundImageLayout = ImageLayout.Zoom;
+            }
+            if (user.achievements[7])
+            {
+                isaprove8.BackgroundImage = Properties.Resources.approved;
+                isaprove8.BackgroundImageLayout = ImageLayout.Zoom;
+            }
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
