@@ -19,7 +19,7 @@ namespace CryptoMonitoring
             Program.AchivesOfUsers();
             СryptoUC = new cryptoUC();
             crypto_list_panel.Controls.Add(СryptoUC);
-            foreach(Crypto crypto in Program.users[Program.currentUserIndex].cryptos)
+            foreach (Crypto crypto in Program.users[Program.currentUserIndex].cryptos)
             {
                 СryptoUC.AddCryptoButton(crypto.name);
             }
@@ -34,6 +34,12 @@ namespace CryptoMonitoring
         {
             Add_crypto_form add_Crypto_Form = new Add_crypto_form(СryptoUC);
             add_Crypto_Form.Show();
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            AchiveMents achiveMents = new AchiveMents();
+            achiveMents.Show();
         }
     }
 }

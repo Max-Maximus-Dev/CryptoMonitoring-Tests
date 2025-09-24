@@ -38,13 +38,14 @@
             button3 = new Button();
             button4 = new Button();
             button5 = new Button();
+            button6 = new Button();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
             // logo
             // 
             logo.FlatStyle = FlatStyle.Popup;
-            logo.Font = new Font("Showcard Gothic", 24F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
+            logo.Font = new Font("Microsoft Sans Serif", 24F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
             logo.ForeColor = Color.Lime;
             logo.Image = Properties.Resources.banan_logo_img;
             logo.ImageAlign = ContentAlignment.MiddleLeft;
@@ -59,11 +60,11 @@
             // balance
             // 
             balance.AutoSize = true;
-            balance.Font = new Font("Arial Rounded MT Bold", 16.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            balance.Font = new Font("Microsoft Sans Serif", 16.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
             balance.ForeColor = Color.Lime;
-            balance.Location = new Point(851, 54);
+            balance.Location = new Point(956, 55);
             balance.Name = "balance";
-            balance.Size = new Size(31, 32);
+            balance.Size = new Size(30, 32);
             balance.TabIndex = 4;
             balance.Text = "0";
             // 
@@ -71,11 +72,11 @@
             // 
             button1.BackColor = SystemColors.ControlDarkDark;
             button1.FlatStyle = FlatStyle.Popup;
-            button1.Font = new Font("Showcard Gothic", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            button1.Font = new Font("Microsoft Sans Serif", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
             button1.ForeColor = Color.Lime;
             button1.Location = new Point(12, 150);
             button1.Name = "button1";
-            button1.Size = new Size(945, 43);
+            button1.Size = new Size(974, 43);
             button1.TabIndex = 5;
             button1.Text = "+";
             button1.UseVisualStyleBackColor = false;
@@ -83,16 +84,17 @@
             // 
             // crypto_list_panel
             // 
+            crypto_list_panel.AutoScroll = true;
             crypto_list_panel.Location = new Point(12, 199);
             crypto_list_panel.Name = "crypto_list_panel";
-            crypto_list_panel.Size = new Size(945, 284);
+            crypto_list_panel.Size = new Size(974, 284);
             crypto_list_panel.TabIndex = 6;
             // 
             // pictureBox1
             // 
             pictureBox1.BackgroundImage = Properties.Resources.purse_img1;
             pictureBox1.BackgroundImageLayout = ImageLayout.Stretch;
-            pictureBox1.Location = new Point(775, 31);
+            pictureBox1.Location = new Point(880, 32);
             pictureBox1.Name = "pictureBox1";
             pictureBox1.Size = new Size(70, 80);
             pictureBox1.TabIndex = 7;
@@ -146,12 +148,26 @@
             button5.TabIndex = 11;
             button5.UseVisualStyleBackColor = false;
             // 
+            // button6
+            // 
+            button6.BackColor = SystemColors.ActiveCaptionText;
+            button6.BackgroundImage = Properties.Resources.icons8_achivement_100;
+            button6.BackgroundImageLayout = ImageLayout.Stretch;
+            button6.FlatStyle = FlatStyle.Popup;
+            button6.Location = new Point(761, 32);
+            button6.Name = "button6";
+            button6.Size = new Size(91, 84);
+            button6.TabIndex = 12;
+            button6.UseVisualStyleBackColor = false;
+            button6.Click += button6_Click;
+            // 
             // Main_menu
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.ActiveCaptionText;
-            ClientSize = new Size(969, 495);
+            ClientSize = new Size(1004, 495);
+            Controls.Add(button6);
             Controls.Add(button5);
             Controls.Add(button4);
             Controls.Add(button3);
@@ -180,5 +196,6 @@
         private Button button3;
         private Button button4;
         private Button button5;
+        private Button button6;
     }
 }

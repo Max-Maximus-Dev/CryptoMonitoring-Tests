@@ -40,6 +40,10 @@
             pictureBox6 = new PictureBox();
             pictureBox7 = new PictureBox();
             pictureBox8 = new PictureBox();
+            logo = new Button();
+            pictureBox9 = new PictureBox();
+            label5 = new Label();
+            pictureBox10 = new PictureBox();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
@@ -48,6 +52,8 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox6).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox7).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox8).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox9).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox10).BeginInit();
             SuspendLayout();
             // 
             // pictureBox1
@@ -110,7 +116,9 @@
             // label3
             // 
             label3.AutoSize = true;
+            label3.BackColor = SystemColors.ActiveCaptionText;
             label3.Font = new Font("Segoe UI", 10F);
+            label3.ForeColor = Color.Lime;
             label3.Location = new Point(417, 273);
             label3.Name = "label3";
             label3.Size = new Size(147, 69);
@@ -122,6 +130,7 @@
             // 
             label4.AutoSize = true;
             label4.Font = new Font("Segoe UI", 10F);
+            label4.ForeColor = Color.Lime;
             label4.Location = new Point(615, 273);
             label4.Name = "label4";
             label4.Size = new Size(147, 46);
@@ -168,13 +177,65 @@
             pictureBox8.TabIndex = 11;
             pictureBox8.TabStop = false;
             // 
+            // logo
+            // 
+            logo.BackColor = Color.Transparent;
+            logo.FlatAppearance.BorderSize = 0;
+            logo.FlatStyle = FlatStyle.Flat;
+            logo.Font = new Font("Microsoft Sans Serif", 24F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
+            logo.ForeColor = Color.Lime;
+            logo.Image = Properties.Resources.banan_logo_img;
+            logo.ImageAlign = ContentAlignment.MiddleLeft;
+            logo.Location = new Point(15, 12);
+            logo.Name = "logo";
+            logo.Size = new Size(262, 103);
+            logo.TabIndex = 12;
+            logo.Text = "BANAN";
+            logo.TextImageRelation = TextImageRelation.ImageBeforeText;
+            logo.UseVisualStyleBackColor = false;
+            // 
+            // pictureBox9
+            // 
+            pictureBox9.BackgroundImage = Properties.Resources.cross;
+            pictureBox9.BackgroundImageLayout = ImageLayout.Zoom;
+            pictureBox9.Location = new Point(853, 374);
+            pictureBox9.Name = "pictureBox9";
+            pictureBox9.Size = new Size(79, 62);
+            pictureBox9.TabIndex = 15;
+            pictureBox9.TabStop = false;
+            // 
+            // label5
+            // 
+            label5.AutoSize = true;
+            label5.Font = new Font("Segoe UI", 10F);
+            label5.ForeColor = Color.Lime;
+            label5.Location = new Point(819, 273);
+            label5.Name = "label5";
+            label5.Size = new Size(147, 46);
+            label5.TabIndex = 14;
+            label5.Text = "Мрія здійснилась\r\nКупити Ethereum";
+            // 
+            // pictureBox10
+            // 
+            pictureBox10.BackgroundImage = Properties.Resources.Знімок_екрана_2025_09_24_015251;
+            pictureBox10.Location = new Point(819, 126);
+            pictureBox10.Name = "pictureBox10";
+            pictureBox10.Size = new Size(149, 144);
+            pictureBox10.TabIndex = 13;
+            pictureBox10.TabStop = false;
+            // 
             // AchiveMents
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackgroundImage = Properties.Resources.istockphoto_1289562025_612x612;
+            AutoScroll = true;
+            BackColor = SystemColors.ActiveCaptionText;
             BackgroundImageLayout = ImageLayout.Stretch;
-            ClientSize = new Size(812, 553);
+            ClientSize = new Size(844, 553);
+            Controls.Add(pictureBox9);
+            Controls.Add(label5);
+            Controls.Add(pictureBox10);
+            Controls.Add(logo);
             Controls.Add(pictureBox8);
             Controls.Add(pictureBox7);
             Controls.Add(pictureBox6);
@@ -187,6 +248,7 @@
             Controls.Add(pictureBox3);
             Controls.Add(pictureBox2);
             Controls.Add(pictureBox1);
+            ForeColor = Color.Lime;
             Name = "AchiveMents";
             Text = "AchiveMents";
             Load += AchiveMents_Load;
@@ -198,6 +260,8 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox6).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox7).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox8).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox9).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox10).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -216,5 +280,9 @@
         private PictureBox pictureBox6;
         private PictureBox pictureBox7;
         private PictureBox pictureBox8;
+        private Button logo;
+        private PictureBox pictureBox9;
+        private Label label5;
+        private PictureBox pictureBox10;
     }
 }

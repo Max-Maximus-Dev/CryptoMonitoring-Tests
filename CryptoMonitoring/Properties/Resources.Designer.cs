@@ -123,6 +123,16 @@ namespace CryptoMonitoring.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap icons8_achivement_100 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-achivement-100", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap icons8_dollar_100 {
             get {
                 object obj = ResourceManager.GetObject("icons8-dollar-100", resourceCulture);
@@ -136,6 +146,16 @@ namespace CryptoMonitoring.Properties {
         internal static System.Drawing.Bitmap icons8_trophy_100 {
             get {
                 object obj = ResourceManager.GetObject("icons8-trophy-100", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_trophy_100__1_ {
+            get {
+                object obj = ResourceManager.GetObject("icons8-trophy-100 (1)", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

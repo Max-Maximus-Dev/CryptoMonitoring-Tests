@@ -20,61 +20,26 @@ namespace CryptoMonitoring
             // To customize application configuration such as set high DPI settings or default font,
             // see https://aka.ms/applicationconfiguration.
             ApplicationConfiguration.Initialize();
-            Application.Run(new Laptop());
+            Application.Run(new Form1());
 
         }
 
         public static void AchivesOfUsers()
         {
-            foreach (User user in users)
+            User currentUser = users[currentUserIndex];
+            if (currentUser.balance >= 50000)
             {
-                if (user.balance >= 50000 && !achive1)
+                achive1 = true;
+            }
+            if (currentUser.cryptos.Count >= 1)
+            {
+                achive2 = true;
+                foreach (Crypto crypto in currentUser.cryptos)
                 {
-                    achive1 = true;
-                    Laptop laptop = new Laptop();
-                    if (laptop != null && !laptop.IsDisposed)
-                    {
-                        MessageBox.Show("Хороший капітал!", "Ви отримали досягнення 'Хороший капітал'!", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    }
-                    AchiveMents achiveMents = new AchiveMents();
-                    achiveMents.Show();
-                }
-                if (user.cryptos.Count >= 1 && !achive2)
-                {
-                    achive2 = true;
-                    // хелпанеш бо я не шарю як в тебе працює
-                    //Laptop laptop = new Laptop();
-                    //if (laptop != null && !laptop.IsDisposed)
-                    //{
-                    //    MessageBox.Show("Перша крипта!", "Ви отримали досягнення 'Перша крипта'!", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    //}
-                    //AchiveMents achiveMents = new AchiveMents();
-                    //achiveMents.Show();
-                }
-                foreach (Crypto crypto in user.cryptos)
-                {
-                    if (crypto.name == "Bitcoin" && !achive3)
-                    {
+                    if (crypto.name == "Bitcoin")
                         achive3 = true;
-                        Laptop laptop = new Laptop();
-                        if (laptop != null && !laptop.IsDisposed)
-                        {
-                            MessageBox.Show("Мрія зробити це в 2012 році!", "Ви отримали досягнення 'Мрія зробити це в 2012 році'!", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                        }
-                        AchiveMents achiveMents = new AchiveMents();
-                        achiveMents.Show();
-                    }
-                    if (crypto.name == "Ethereum" && !achive4)
-                    {
+                    if (crypto.name == "Ethereum")
                         achive4 = true;
-                        Laptop laptop = new Laptop();
-                        if (laptop != null && !laptop.IsDisposed)
-                        {
-                            MessageBox.Show("Мрія здійснилась!", "Ви отримали досягнення 'Мрія здійснилась'!", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                        }
-                        AchiveMents achiveMents = new AchiveMents();
-                        achiveMents.Show();
-                    }
                 }
             }
         }
