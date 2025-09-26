@@ -48,5 +48,10 @@ namespace CryptoMonitoring
             }
 
         }
+
+        private void Add_crypto_form_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -37,26 +37,26 @@
             // logo
             // 
             logo.FlatStyle = FlatStyle.Popup;
-            logo.Font = new Font("Showcard Gothic", 24F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
+            logo.Font = new Font("Microsoft Sans Serif", 24F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
             logo.ForeColor = Color.Lime;
             logo.Image = Properties.Resources.banan_logo_img;
             logo.ImageAlign = ContentAlignment.MiddleLeft;
-            logo.Location = new Point(37, 21);
+            logo.Location = new Point(12, 21);
             logo.Name = "logo";
-            logo.Size = new Size(262, 103);
+            logo.Size = new Size(318, 103);
             logo.TabIndex = 4;
-            logo.Text = "BANAN";
+            logo.Text = "BANANCE";
             logo.TextImageRelation = TextImageRelation.ImageBeforeText;
             logo.UseVisualStyleBackColor = false;
             // 
             // label_indificaton
             // 
             label_indificaton.AutoSize = true;
-            label_indificaton.Font = new Font("Arial Rounded MT Bold", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label_indificaton.Font = new Font("Microsoft Sans Serif", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label_indificaton.ForeColor = Color.Lime;
             label_indificaton.Location = new Point(55, 166);
             label_indificaton.Name = "label_indificaton";
-            label_indificaton.Size = new Size(166, 27);
+            label_indificaton.Size = new Size(161, 29);
             label_indificaton.TabIndex = 18;
             label_indificaton.Text = "Name of coin:";
             // 
@@ -65,11 +65,11 @@
             textbox_indificaton.BackColor = SystemColors.InactiveCaptionText;
             textbox_indificaton.BorderStyle = BorderStyle.None;
             textbox_indificaton.Cursor = Cursors.IBeam;
-            textbox_indificaton.Font = new Font("Arial Rounded MT Bold", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            textbox_indificaton.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
             textbox_indificaton.ForeColor = Color.Lime;
             textbox_indificaton.Location = new Point(55, 196);
             textbox_indificaton.Name = "textbox_indificaton";
-            textbox_indificaton.Size = new Size(206, 24);
+            textbox_indificaton.Size = new Size(206, 23);
             textbox_indificaton.TabIndex = 17;
             textbox_indificaton.Text = "-";
             // 
@@ -79,7 +79,7 @@
             button_submit.FlatAppearance.BorderColor = SystemColors.ActiveCaptionText;
             button_submit.FlatAppearance.BorderSize = 0;
             button_submit.FlatStyle = FlatStyle.Flat;
-            button_submit.Font = new Font("Arial Rounded MT Bold", 16.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            button_submit.Font = new Font("Microsoft Sans Serif", 16.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
             button_submit.ForeColor = Color.Black;
             button_submit.Location = new Point(81, 294);
             button_submit.Name = "button_submit";
@@ -102,6 +102,7 @@
             ForeColor = SystemColors.ControlText;
             Name = "Add_crypto_form";
             Text = "Add_crypto_form";
+            Load += Add_crypto_form_Load;
             ResumeLayout(false);
             PerformLayout();
         }

@@ -204,9 +204,9 @@
             logo.ImageAlign = ContentAlignment.MiddleLeft;
             logo.Location = new Point(15, 12);
             logo.Name = "logo";
-            logo.Size = new Size(262, 103);
+            logo.Size = new Size(320, 103);
             logo.TabIndex = 12;
-            logo.Text = "BANAN";
+            logo.Text = "BANANCE";
             logo.TextImageRelation = TextImageRelation.ImageBeforeText;
             logo.UseVisualStyleBackColor = false;
             // 
@@ -287,16 +287,17 @@
             label7.AutoSize = true;
             label7.Font = new Font("Segoe UI", 10F);
             label7.ForeColor = Color.Lime;
-            label7.Location = new Point(1201, 273);
+            label7.Location = new Point(1191, 273);
             label7.Name = "label7";
-            label7.Size = new Size(173, 69);
+            label7.Size = new Size(194, 46);
             label7.TabIndex = 20;
-            label7.Text = "Багатій майбутнього\r\nдосягти капіталу в\r\n1.000.000$.";
+            label7.Text = "Майнер\r\nЗробити крипто-ферму";
             label7.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // pictureBox7
             // 
-            pictureBox7.BackgroundImage = Properties.Resources.Знімок_екрана_2025_09_24_181341;
+            pictureBox7.BackgroundImage = Properties.Resources.Знімок_екрана_2025_09_25_204724;
+            pictureBox7.BackgroundImageLayout = ImageLayout.Zoom;
             pictureBox7.Location = new Point(1215, 126);
             pictureBox7.Name = "pictureBox7";
             pictureBox7.Size = new Size(149, 144);

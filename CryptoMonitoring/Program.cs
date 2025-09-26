@@ -3,6 +3,7 @@ using static System.Windows.Forms.VisualStyles.VisualStyleElement.TextBox;
 
 namespace CryptoMonitoring
 {
+
     internal static class Program
     {
         public static List<User> users;
@@ -12,7 +13,6 @@ namespace CryptoMonitoring
         {
             users = new List<User>();
             DeserialazeUsers();
-            AchivesOfUsers();
             // To customize application configuration such as set high DPI settings or default font,
             // see https://aka.ms/applicationconfiguration.
             ApplicationConfiguration.Initialize();
@@ -58,15 +58,7 @@ namespace CryptoMonitoring
             }
             if (!user.achievements[5])
             {
-                foreach (var crypto in user.cryptos)
-                {
-                    //if (crypto.sellPrice >= crypto.buyPrice * 3)
-                    //{
-                    //    user.achievements[5] = true;
-                    //    MessageBox.Show("¬далий трейдер", "¬и отримали дос€гненн€ '¬далий трейдер'!", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    //    break;
-                    //}
-                }
+                // тут реал≥зац≥€ но троб≥ треба майнера зробити
             }
             if (user.balance >= 1000000 && !user.achievements[6])
             {

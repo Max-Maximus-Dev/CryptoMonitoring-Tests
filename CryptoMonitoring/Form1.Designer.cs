@@ -59,9 +59,9 @@
             logo.ImageAlign = ContentAlignment.MiddleLeft;
             logo.Location = new Point(12, 12);
             logo.Name = "logo";
-            logo.Size = new Size(262, 103);
+            logo.Size = new Size(319, 103);
             logo.TabIndex = 2;
-            logo.Text = "BANAN";
+            logo.Text = "BANANCE";
             logo.TextImageRelation = TextImageRelation.ImageBeforeText;
             logo.UseVisualStyleBackColor = false;
             // 

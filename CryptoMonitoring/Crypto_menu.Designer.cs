@@ -38,7 +38,7 @@
             button_graphic.FlatAppearance.BorderColor = SystemColors.ActiveCaptionText;
             button_graphic.FlatAppearance.BorderSize = 0;
             button_graphic.FlatStyle = FlatStyle.Flat;
-            button_graphic.Font = new Font("Arial Rounded MT Bold", 16.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            button_graphic.Font = new Font("Microsoft Sans Serif", 16.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
             button_graphic.ForeColor = Color.Black;
             button_graphic.Location = new Point(606, 23);
             button_graphic.Name = "button_graphic";
@@ -51,15 +51,15 @@
             // logo
             // 
             logo.FlatStyle = FlatStyle.Popup;
-            logo.Font = new Font("Showcard Gothic", 24F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
+            logo.Font = new Font("Microsoft Sans Serif", 24F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
             logo.ForeColor = Color.Lime;
             logo.Image = Properties.Resources.banan_logo_img;
             logo.ImageAlign = ContentAlignment.MiddleLeft;
             logo.Location = new Point(12, 12);
             logo.Name = "logo";
-            logo.Size = new Size(262, 103);
+            logo.Size = new Size(319, 103);
             logo.TabIndex = 20;
-            logo.Text = "BANAN";
+            logo.Text = "BANANCE";
             logo.TextImageRelation = TextImageRelation.ImageBeforeText;
             logo.UseVisualStyleBackColor = false;
             // 

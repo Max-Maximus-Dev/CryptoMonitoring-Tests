@@ -32,7 +32,7 @@ namespace CryptoMonitoring
             newButton.Font = new Font("Arial Rounded MT Bold", 13.8f, FontStyle.Regular);
             newButton.BackColor = Color.Lime;
 
-            newButton.Size = new Size(974, 100);
+            newButton.Size = new Size(1023, 100);
 
             int yPos = this.Controls.Count * (newButton.Height + 5) + 10;
             newButton.Location = new Point(10, yPos);

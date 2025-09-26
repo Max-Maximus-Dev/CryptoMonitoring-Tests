@@ -103,6 +103,16 @@ namespace CryptoMonitoring.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap binance_coin_avatar {
+            get {
+                object obj = ResourceManager.GetObject("binance_coin_avatar", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap ChatGPT_Image_23_вер__2025_р___23_17_22 {
             get {
                 object obj = ResourceManager.GetObject("ChatGPT Image 23 вер. 2025 р., 23_17_22", resourceCulture);
@@ -113,9 +123,99 @@ namespace CryptoMonitoring.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap coin_avatar {
+            get {
+                object obj = ResourceManager.GetObject("coin_avatar", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap coins_avatar {
+            get {
+                object obj = ResourceManager.GetObject("coins_avatar", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap coins_avatar1 {
+            get {
+                object obj = ResourceManager.GetObject("coins_avatar1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap computer_avatr {
+            get {
+                object obj = ResourceManager.GetObject("computer_avatr", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap cross {
             get {
                 object obj = ResourceManager.GetObject("cross", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap cup_avatar {
+            get {
+                object obj = ResourceManager.GetObject("cup_avatar", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap dollar_logo {
+            get {
+                object obj = ResourceManager.GetObject("dollar_logo", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap emerald_avatr {
+            get {
+                object obj = ResourceManager.GetObject("emerald_avatr", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap gold_avatar {
+            get {
+                object obj = ResourceManager.GetObject("gold_avatar", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap hacker_avatar {
+            get {
+                object obj = ResourceManager.GetObject("hacker_avatar", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -183,9 +283,29 @@ namespace CryptoMonitoring.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap laptop_avatar {
+            get {
+                object obj = ResourceManager.GetObject("laptop_avatar", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap laptop_on_table {
             get {
                 object obj = ResourceManager.GetObject("laptop on table", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap laptop_right_avatr {
+            get {
+                object obj = ResourceManager.GetObject("laptop_right_avatr", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -236,6 +356,26 @@ namespace CryptoMonitoring.Properties {
         internal static System.Drawing.Bitmap purse_img1 {
             get {
                 object obj = ResourceManager.GetObject("purse_img1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap upstat_avatar {
+            get {
+                object obj = ResourceManager.GetObject("upstat_avatar", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap upstat_avatar1 {
+            get {
+                object obj = ResourceManager.GetObject("upstat_avatar1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -356,6 +496,56 @@ namespace CryptoMonitoring.Properties {
         internal static System.Drawing.Bitmap Знімок_екрана_2025_09_24_181413 {
             get {
                 object obj = ResourceManager.GetObject("Знімок екрана 2025-09-24 181413", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Знімок_екрана_2025_09_25_204724 {
+            get {
+                object obj = ResourceManager.GetObject("Знімок екрана 2025-09-25 204724", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Знімок_екрана_2025_09_26_012142 {
+            get {
+                object obj = ResourceManager.GetObject("Знімок екрана 2025-09-26 012142", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Знімок_екрана_2025_09_26_183804 {
+            get {
+                object obj = ResourceManager.GetObject("Знімок екрана 2025-09-26 183804", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Знімок_екрана_2025_09_26_185611 {
+            get {
+                object obj = ResourceManager.GetObject("Знімок екрана 2025-09-26 185611", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Знімок_екрана_2025_09_26_185953 {
+            get {
+                object obj = ResourceManager.GetObject("Знімок екрана 2025-09-26 185953", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

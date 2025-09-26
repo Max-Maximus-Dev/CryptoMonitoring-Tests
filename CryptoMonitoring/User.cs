@@ -14,6 +14,7 @@ namespace CryptoMonitoring
         public float balance { get; set; }
         public List<Crypto> cryptos { get; set; }
         public List<bool> achievements { get; set; }
+        public int avatar_id { get; set; }
         public User(string username, string email, string password)
         {
             this.username = username;
@@ -22,6 +23,7 @@ namespace CryptoMonitoring
             this.balance = 0.0f;
             this.achievements = new List<bool> { false, false, false, false, false, false, false, false, false, false };
             cryptos = new List<Crypto>();
+            avatar_id = 0;
         }
 
         ~User(){}
