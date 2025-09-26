@@ -14,7 +14,9 @@ namespace CryptoMonitoring
     {
         cryptoUC СryptoUC;
         bool first_open_panel1 = true;
+        bool firs_open_panel_avatar = false;
         bool is_some_menu_opem = false;
+        bool first_open_panel2 = true;
         public Main_menu()
         {
             InitializeComponent();
@@ -145,10 +147,13 @@ namespace CryptoMonitoring
                 //panel1.Location = new Point(374, 77);
                 panelAvatar.Size = new Size(619, 309);
                 panel1.Visible = true;
+                panelAvatar.Visible = false;
             }
             else
             {
                 panel1.Visible = false;
+                panelAvatar.Visible = false;
+                firs_open_panel_avatar = false;
                 first_open_panel1 = true;
             }
         }
@@ -336,6 +341,56 @@ namespace CryptoMonitoring
         {
             tableLeaders tableLeaders = new tableLeaders();
             tableLeaders.Show();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            if (first_open_panel2)
+            {
+                UpdateChat();
+                Program.SerialazeUsers();
+                chatTextBox.ReadOnly = true;
+                chat_panel.Visible = true;
+                panel1.Visible = false;
+                first_open_panel1 = true;
+                panelAvatar.Visible = false;
+                first_open_panel2 = false;
+            }
+            else
+            {
+                chat_panel.Visible = false;
+                first_open_panel2 = true;
+
+            }
+        }
+        private void UpdateChat()
+        {
+            chatTextBox.Clear();
+            User currentUser = Program.users[Program.currentUserIndex];
+            foreach (string msg in currentUser.messages)
+            {
+                chatTextBox.RightToLeft = RightToLeft.Yes;
+                chatTextBox.AppendText(msg + "\r\n");
+                Program.SerialazeUsers();
+            }
+            chatTextBox.SelectionStart = chatTextBox.Text.Length;
+            Program.SerialazeUsers();
+        }
+        private void send_button_Click(object sender, EventArgs e)
+        {
+            string text = userTextBox.Text.Trim();
+            if (text != "")
+            {
+                User currentUser = Program.users[Program.currentUserIndex];
+                string message = $"{currentUser.username}: {text}";
+                foreach (User user in Program.users)
+                {
+                    user.messages.Add(message);
+                }
+                UpdateChat();
+                userTextBox.Clear();
+                Program.SerialazeUsers();
+            }
         }
     }
 }

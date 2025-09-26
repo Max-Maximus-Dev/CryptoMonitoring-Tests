@@ -64,9 +64,16 @@
             button4 = new Button();
             button5 = new Button();
             button6 = new Button();
+            chat_panel = new Panel();
+            panel2 = new Panel();
+            chatTextBox = new RichTextBox();
+            send_button = new Button();
+            userTextBox = new TextBox();
             panelAvatar.SuspendLayout();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            chat_panel.SuspendLayout();
+            panel2.SuspendLayout();
             SuspendLayout();
             // 
             // logo
@@ -133,7 +140,7 @@
             panelAvatar.Controls.Add(button_avatar2);
             panelAvatar.Controls.Add(label4);
             panelAvatar.Controls.Add(button_avatar1);
-            panelAvatar.Location = new Point(332, 67);
+            panelAvatar.Location = new Point(294, 87);
             panelAvatar.Name = "panelAvatar";
             panelAvatar.Size = new Size(607, 251);
             panelAvatar.TabIndex = 24;
@@ -333,7 +340,7 @@
             panel1.Controls.Add(change_avatar_button);
             panel1.Location = new Point(379, 82);
             panel1.Name = "panel1";
-            panel1.Size = new Size(615, 309);
+            panel1.Size = new Size(619, 309);
             panel1.TabIndex = 13;
             panel1.Visible = false;
             // 
@@ -424,7 +431,7 @@
             username_label.AutoSize = true;
             username_label.Font = new Font("Showcard Gothic Cyrillic", 19F);
             username_label.ForeColor = Color.White;
-            username_label.Location = new Point(115, 37);
+            username_label.Location = new Point(141, 37);
             username_label.Name = "username_label";
             username_label.Size = new Size(182, 40);
             username_label.TabIndex = 16;
@@ -488,6 +495,7 @@
             button3.Size = new Size(91, 84);
             button3.TabIndex = 9;
             button3.UseVisualStyleBackColor = false;
+            button3.Click += button3_Click;
             // 
             // button4
             // 
@@ -527,12 +535,68 @@
             button6.UseVisualStyleBackColor = false;
             button6.Click += button6_Click;
             // 
+            // chat_panel
+            // 
+            chat_panel.Controls.Add(panel2);
+            chat_panel.Controls.Add(send_button);
+            chat_panel.Controls.Add(userTextBox);
+            chat_panel.Location = new Point(522, 69);
+            chat_panel.Name = "chat_panel";
+            chat_panel.Size = new Size(326, 400);
+            chat_panel.TabIndex = 0;
+            chat_panel.Visible = false;
+            // 
+            // panel2
+            // 
+            panel2.Controls.Add(chatTextBox);
+            panel2.Location = new Point(3, 0);
+            panel2.Name = "panel2";
+            panel2.Size = new Size(323, 351);
+            panel2.TabIndex = 2;
+            // 
+            // chatTextBox
+            // 
+            chatTextBox.BackColor = SystemColors.ActiveCaptionText;
+            chatTextBox.BorderStyle = BorderStyle.None;
+            chatTextBox.ForeColor = Color.White;
+            chatTextBox.Location = new Point(-3, 3);
+            chatTextBox.Name = "chatTextBox";
+            chatTextBox.RightToLeft = RightToLeft.No;
+            chatTextBox.ScrollBars = RichTextBoxScrollBars.Vertical;
+            chatTextBox.Size = new Size(323, 348);
+            chatTextBox.TabIndex = 0;
+            chatTextBox.Text = "";
+            // 
+            // send_button
+            // 
+            send_button.BackColor = SystemColors.ActiveCaptionText;
+            send_button.BackgroundImage = Properties.Resources.icons8_sent_96;
+            send_button.BackgroundImageLayout = ImageLayout.Zoom;
+            send_button.FlatAppearance.BorderSize = 0;
+            send_button.FlatStyle = FlatStyle.Popup;
+            send_button.Location = new Point(267, 348);
+            send_button.Name = "send_button";
+            send_button.Size = new Size(56, 52);
+            send_button.TabIndex = 1;
+            send_button.UseVisualStyleBackColor = false;
+            send_button.Click += send_button_Click;
+            // 
+            // userTextBox
+            // 
+            userTextBox.BorderStyle = BorderStyle.FixedSingle;
+            userTextBox.Font = new Font("Segoe UI", 20F);
+            userTextBox.Location = new Point(-2, 348);
+            userTextBox.Name = "userTextBox";
+            userTextBox.Size = new Size(273, 52);
+            userTextBox.TabIndex = 0;
+            // 
             // Main_menu
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.ActiveCaptionText;
             ClientSize = new Size(1048, 495);
+            Controls.Add(chat_panel);
             Controls.Add(panelAvatar);
             Controls.Add(button6);
             Controls.Add(panel1);
@@ -553,6 +617,9 @@
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            chat_panel.ResumeLayout(false);
+            chat_panel.PerformLayout();
+            panel2.ResumeLayout(false);
             ResumeLayout(false);
             PerformLayout();
         }
@@ -594,5 +661,10 @@
         private Button button_avatar5;
         private Button button_avatar4;
         private Button button_avatar3;
+        private Panel chat_panel;
+        private Button send_button;
+        private TextBox userTextBox;
+        private Panel panel2;
+        private RichTextBox chatTextBox;
     }
 }

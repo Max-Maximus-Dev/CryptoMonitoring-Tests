@@ -243,6 +243,26 @@ namespace CryptoMonitoring.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap icons8_send_100 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-send-100", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_sent_96 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-sent-96", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap icons8_trophy_100 {
             get {
                 object obj = ResourceManager.GetObject("icons8-trophy-100", resourceCulture);

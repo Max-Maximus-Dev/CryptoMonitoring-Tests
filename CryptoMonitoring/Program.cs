@@ -86,7 +86,6 @@ namespace CryptoMonitoring
                 sw.WriteLine(json);
             }
         }
-
         public static void DeserialazeUsers()
         {
             if (File.Exists("users.json"))

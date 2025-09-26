@@ -15,14 +15,19 @@ namespace CryptoMonitoring
         public List<Crypto> cryptos { get; set; }
         public List<bool> achievements { get; set; }
         public int avatar_id { get; set; }
+        public List<string> messages { get; set; }
+        public List<string> chatHistory { get; set; }
+
         public User(string username, string email, string password)
         {
             this.username = username;
             this.email = email;
             this.password = password;
             this.balance = 0.0f;
+            this.chatHistory = new List<string>();
             this.achievements = new List<bool> { false, false, false, false, false, false, false, false, false, false };
             cryptos = new List<Crypto>();
+            messages = new List<string>();
             avatar_id = 0;
         }
 
